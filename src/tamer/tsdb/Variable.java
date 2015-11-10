@@ -111,6 +111,11 @@ public class Variable {
         this.data = new DoubleArrayList(data.length);
         this.data.addElements(0, data); // deep copies data
     }
+    
+    public void setData(Double[] data) {
+        this.data = new DoubleArrayList(data.length);
+        this.data.addAll(Arrays.asList(data));
+    }
 
     /**
      * sets data for variable
@@ -163,4 +168,9 @@ public class Variable {
         }
         return isLessThan;
     }
+    
+    public void getData(int lag1, int lag2) {
+        
+    }
+    
 }
